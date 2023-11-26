@@ -1,4 +1,3 @@
-/* @im  */
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +10,6 @@ body {
   background-position: center;
   background-size: cover;
   color: white;
-  /* background-repeat: no-repeat; */
 }
 .title {
   text-align: center;
@@ -25,13 +23,13 @@ input {
   position: relative;
 }
 
-.fa-map-marker {
+/* .fa-map-marker {
   position: absolute;
-  /* color: black; */
   z-index: 0;
   left: -15px;
   top: 15px;
 }
+ */
 
 #card h5, #card span{
   text-transform: capitalize;
@@ -39,12 +37,15 @@ input {
 
 .location {
   background:rgba(0, 0, 0, 0.5);
-  /* background:rgba(255, 255, 255, 0.1); */
-  /* backdrop-filter: blur(10px); */
-  /* width: 20em; */
   text-align: center;
   margin: auto;
   height: auto;
   border-radius: 10px;
   padding: 20px 0;
+}
+
+@media screen and (max-width: 500px){
+  .location{
+    width: 300px;
+  }
 }
