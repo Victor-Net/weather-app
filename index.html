@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- BS5 css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+
+    <!-- fav icon -->
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <h1 class="title">Weather App</h1>
+    <!-- seacrh btn  -->
+    <div class="container">
+      <form class="col-md-6 m-auto" action="">
+        <div class="input-group mb-3">
+          <input
+            id="search"
+            type="text"
+            class="form-control p-2"
+            placeholder="Search Location"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
+          <button
+            class="search-btn btn btn-outline-primary outline"
+            type="button"
+            id="button-addon2"
+          >
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Card -->
+      <div id="card">
+        <!-- <div class="location">
+          <p class="time"></p>
+          <h1 id="city" class="md-auto"></h1>
+          <h4><span id="temp"></span>&deg;C</h4>
+          <h5>weather: <span id="weather"></span></h5>
+          
+          <h5>sunrise: <span id="sunrise"></span> AM</h5>
+          <h5>sunset: <span id="sunset"></span> PM</h5>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- BS5 JS -->
+    <!-- <script src="../../assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+
+    <!-- FONT AWESOME -->
+    <!-- <script src="../../assets/fontawesome-free-6.4.2-web/js/all.js"></script> -->
+
+    <!-- CUSTOM JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
