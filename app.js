@@ -24,6 +24,14 @@ btn.addEventListener("click", function temp() {
   showCard();
 });
 
+// "Enter key" for search
+document.getElementById("search").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    btn.click();
+  }
+});
+
 function showCard() {
   const cardEl = document.getElementById("card");
   cardEl.innerHTML = `<div class="location">
